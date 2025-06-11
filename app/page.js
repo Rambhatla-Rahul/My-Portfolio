@@ -43,7 +43,7 @@ export default function Home() {
       <section id="education-section" className="px-4 w-full pb-4">
         <EducationTimeline />
       </section>
-
+      
     </div>
   );
 }
