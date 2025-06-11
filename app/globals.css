@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+
+/* 
+BG  rgb(21, 22, 29)
+Card rgb(100, 103, 114) 
+*/
+
+
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE 10+ */
+  scrollbar-width: none;     /* Firefox */
+}
+
+
+
+/* Fonts */
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.shadows-into-light-regular {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.edu-sa-hand-font {
+  font-family: "Edu SA Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+.roboto-font {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "width" 100;
+}
+/* Fonts End */
+
+
+body {
+  background: rgba(226, 217, 217, 0.592);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Navbar Styles */
+.navbar-icon:nth-child(1):hover{
+  transform: translateY(-2px);
+  transition: all 0.2s;
+}
+.navbar-icon:nth-child(2):hover{
+  transform: translateY(-2px);
+  transition: all 0.2s;
+}
+.navbar-icon:nth-child(3):hover{
+  transform: translateY(-2px);
+  transition: all 0.2s;
+}
+/* Navbar Styles End */
+
+/* Socials */
+

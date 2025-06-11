@@ -1,0 +1,57 @@
+.flip-container {
+  perspective: 1000px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.coin {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease-in-out;
+}
+
+.coin img {
+  position: absolute;
+  border-radius: 50%;
+  backface-visibility: hidden;
+}
+
+.coin .front {
+  transform: rotateY(0deg);
+}
+
+.coin .back {
+  transform: rotateY(180deg);
+}
+
+/* Flip In (hover on) */
+.flip-in {
+  animation: coin-flip-in 0.8s forwards;
+}
+
+/* Flip Out (hover off) */
+.flip-out {
+  animation: coin-flip-out 0.8s forwards;
+}
+
+/* Keyframes for flipping in */
+@keyframes coin-flip-in {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+
+/* Keyframes for flipping out */
+@keyframes coin-flip-out {
+  0% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
