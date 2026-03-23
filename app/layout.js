@@ -30,8 +30,6 @@ export default function RootLayout({ children }) {
       >        
         <Navbar/>
         <main>{children}</main>
-        <IconBar/>
-        <ContactButton />
         
       </body>
     </html>

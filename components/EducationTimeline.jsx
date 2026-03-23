@@ -39,11 +39,11 @@ const EducationTimeline = () => {
       <div className="relative border-l border-gray-300 dark:border-gray-600 max-w-3xl mx-auto">
         {educationTimeline.map((item, index) => (
           <div key={index} className="mb-10 ml-6">
-            <div className="absolute w-4 h-4 bg-blue-600 rounded-full mt-1.5 -left-2 border border-white dark:border-black" />
+            <div className={`absolute w-4 h-4 ${index === educationTimeline.length -1 ? "bg-white":"bg-gray-900 "} rounded-full mt-1.5 -left-2 border border-white dark:border-black`} />
             <div className="bg-white/10 backdrop-blur-md border border-white/20 dark:border-gray-700 p-6 rounded-xl shadow-lg transition hover:scale-[1.02]">
               <h3 className="text-xl font-semibold mb-1">{item.title}</h3>
               <p className="text-sm text-gray-400 mb-1">{item.institution}</p>
-              <p className="text-sm text-blue-400 mb-2">{item.duration}</p>
+              <p className="text-sm text-white mb-2">{item.duration}</p>
               <p className="text-gray-200 whitespace-pre-line">{item.description}</p>
             </div>
           </div>

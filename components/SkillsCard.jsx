@@ -1,46 +1,45 @@
 'use client';
-import { RiJavascriptFill } from "react-icons/ri";
-import { TbBrandNodejs } from "react-icons/tb";
-import { RiNextjsFill } from "react-icons/ri";
-import { FaPython } from "react-icons/fa";
-import { FaJava } from "react-icons/fa";
-import Image from "next/image";
 
-const SkillsCard = ({ skillName, skillDesc, skillLink }) => {
-  const handleSkillIcon = () => {
-    if (skillName === 'JavaScript') {
-      return <RiJavascriptFill className="text-yellow-400 text-4xl" />;
+const SkillsCard = ({ skill }) => {
+
+  const handleClick = () => {
+    if (skill.skillLink) {
+      window.open(skill.skillLink, "_blank");
     }
-    else if(skillName === 'NodeJs'){
-      return <TbBrandNodejs className="text-green-500 text-4xl" />;
-    }
-    else if(skillName === 'NextJS'){
-      return <RiNextjsFill className="text-black text-4xl" />;
-    }
-    else if(skillName === 'Python'){
-      return <FaPython className="text-blue-700 text-4xl" />;
-    }
-    else if(skillName === 'Java'){
-      return <FaJava  className="text-red-500 text-4xl" />;
-    }
-    else if(skillName === 'C'){
-      return <Image src={'/icons8-c-programming.svg'} alt ='C-programming' className="object-cover" width={36} height={36} priority/>;
-    }
-    return null;
   };
+
+  const Icon = skill.skillIcon;
 
   return (
     <div
-      className="flex w-[200px] p-2 text-white bg-black/60 backdrop-blur-[10px] border border-white/20 
-                 shadow-[0_4px_30px_rgba(255,255,255,0.1)] rounded-2xl cursor-pointer items-center justify-center"
-      onClick={() => window.open(skillLink, '_blank')}
+      onClick={handleClick}
+      className="
+      flex items-center gap-4
+      w-[200px] h-[70px] px-4
+      text-white
+      bg-black/50 backdrop-blur-md
+      border border-white/10
+      rounded-xl
+      shadow-lg
+      transition-all duration-200
+      hover:border-white/30
+      hover:bg-black/70
+      hover:scale-[1.03]
+      "
     >
-      <div className="flex items-center justify-center border-r-2 pr-4">
-        {handleSkillIcon()}
+      {/* Icon */}
+      <div className="flex items-center justify-center text-xl text-white/90">
+        <Icon />
       </div>
-      <div className="h-full mx-2" />
-      <div className="flex flex-col h-full justify-center items-center">
-        <h1 className="font-semibold">{skillName}</h1>
+
+      {/* Divider */}
+      <div className="h-6 w-px bg-white/20"></div>
+
+      {/* Text */}
+      <div className="flex items-center">
+        <h1 className="text-sm font-medium tracking-wide">
+          {skill.skillName}
+        </h1>
       </div>
     </div>
   );
