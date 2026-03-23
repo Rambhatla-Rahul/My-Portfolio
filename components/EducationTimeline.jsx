@@ -4,27 +4,25 @@ const educationTimeline = [
     title: '10th Grade – CBSE Board',
     institution: 'New Era Senior Secondary School',
     duration: '2019 – 2020',
-    description: 'Completed 10th standard, scoring 89.9%',
+    description: 'Completed 10th standard, scoring 86.6%',
   },
   {
     title: '12th Grade – Intermediate CBSE',
     institution: 'Shannen Kidz CBSE',
     duration: '2020 – 2022',
-    description: 'Specialized in Mathematics, Physics, and Chemistry. Scored 75%.',
+    description: 'Specialized in Mathematics, Physics, and Chemistry. Scored 73.2%.',
   },
   {
     title: 'Bachelor of Technology – CSE',
     institution: 'Gandhi Institute of Technology and Management',
     duration: '2022 August – 2026 (On Going)',
-    description: 'Graduated with a degree in Computer Science and Engineering. CGPA: 8.6.',
+    description: 'Pursuing degree in Computer Science and Engineering. CGPA: 8.7. (Current)',
   },
   {
     title: 'Achievements',
     institution: '',
     duration: '',
-    description: `🏆 2nd Place – Citizen-Hack Hackathon by Miracle Software Solution (2024)\n
-🧠 Built AI-based prescription summarizer with lang-graph\n
-💻 MERN stack portfolio projects and internships`,
+    description: `2nd Place - Citizen-Hack Hackathon by Miracle Software Solution (2024)\n Built AI-based prescription summarizer with lang-graph and agentic AI platform\n to help people understand their lab reports\n`,
   },
 ];
 
