@@ -38,7 +38,7 @@ const ProjectCard = ({ project }) => {
           className="object-cover"
         />
       </div> */}
-      <div className="relative w-full h-[350px] overflow-hidden rounded-xl border border-white/10">
+      <div className="relative w-full h-[350px] mt-6 md:mt-0 overflow-hidden rounded-xl border border-white/10">
 
         {
           project.live === "" ? 

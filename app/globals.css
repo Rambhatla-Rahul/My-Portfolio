@@ -52,7 +52,11 @@ body {
 }
 
 .container-bg{
-  @apply bg-gray-950/70;
+  /* @apply bg-gray-950/70; */
+  @apply bg-gradient-to-b from-black to-[#0a0a0a];
+}
+.heading{
+  @apply text-6xl font-bold text-white/80 text-center tracking-tight
 }
 /* Navbar Styles */
 /* 

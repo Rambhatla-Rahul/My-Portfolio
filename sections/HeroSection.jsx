@@ -38,9 +38,9 @@ const HeroSection = () => {
   return (
     <section
       id="hero-section"
-      className="w-full min-h-screen bg-black text-white flex flex-1 md:flex items-center px-4"
+      className="w-full min-h-screen bg-black text-white flex flex-1 md:flex items-center px-4 container-bg"
     >
-      <div className='w-full py-38 mx-auto container-bg rounded-2xl'>
+      <div className='w-full py-38 mx-auto rounded-2xl'>
         <div className="max-w-7xl mx-auto w-full px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
           {/* Intro Section */}
@@ -81,7 +81,7 @@ const HeroSection = () => {
             </p>
 
             {/* Buttons */}
-            <div className="flex gap-4 mt-4">
+            <div className="flex flex-col md:flex-row gap-4 mt-4">
 
               <motion.button
                 whileHover={{ scale: 1.03 }}
@@ -90,7 +90,7 @@ const HeroSection = () => {
                 onClick={() =>
                   gsap.to(window, {
                     duration: 1,
-                    scrollTo: { y: "#projects-section", offsetY: 80 },
+                    scrollTo: { y: "#projects-section", offsetY: 10 },
                     ease: "power2.inOut",
                   })
                 }
@@ -103,6 +103,13 @@ const HeroSection = () => {
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
                 className="px-6 py-3 border border-gray-700 rounded-lg hover:border-gray-400 transition"
+                onClick={() =>
+                  gsap.to(window, {
+                    duration: 1,
+                    scrollTo: { y: "#contact-section", offsetY: 10 },
+                    ease: "power2.inOut",
+                  })
+                }
               >
                 Contact Me
               </motion.button>

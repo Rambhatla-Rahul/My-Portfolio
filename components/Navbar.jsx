@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react';
 import { SlHome } from "react-icons/sl";
 import { GrAchievement } from "react-icons/gr";
 import { GoProjectSymlink } from "react-icons/go";
-import { Laptop } from 'lucide-react';
+import { Contact, Laptop, Phone } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 
@@ -18,7 +18,7 @@ const Navbar = () => {
   const scrollToSection = (id) => {
     gsap.to(window, {
       duration: 1,
-      scrollTo: { y: `#${id}`, offsetY: 80 },
+      scrollTo: { y: `#${id}`, offsetY: 10 },
       ease: 'power2.inOut',
     });
   };
@@ -126,6 +126,7 @@ const Navbar = () => {
     { icon: <GoProjectSymlink />, id: "projects-section" },
     { icon: <Laptop />, id: "skills-section" },
     { icon: <GrAchievement />, id: "education-section" },
+    {icon:<Phone size={20}/>,id:"contact-section"}
   ];
 
   return (

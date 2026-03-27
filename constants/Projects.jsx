@@ -1,5 +1,15 @@
 export const projects = [
     {
+      title: "SDLC.ai",
+      description:
+      "Human in the Loop Agentic AI orchestrator which performs complete SDLC process by taking in user intent.\n Performs architechture design IP and Compliance scans and quatlity checks with auditing.",
+      image: "/chat_application.png",
+      live: "https://sdlc-ai-rho.vercel.app/",
+      github: "https://github.com/Rambhatla-Rahul/SDLC.ai",
+      stack: ["Langgraph", "FastAPI", "React", "Next.js", "Websockets","Gemini","Ollama"],
+      status: "Live",
+    },
+    {
       title: "Realtime Chat Application",
       description:
       "A MERN stack chat application using WebSockets for realtime communication. Uses socket.io to form full-duplex connection between clients with encrypted chats.",

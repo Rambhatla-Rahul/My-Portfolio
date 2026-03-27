@@ -18,14 +18,14 @@ export const SkillsSection = () => {
   return (
     <section
       id="skills-section"
-      className="w-full min-h-screen bg-black text-white flex items-start px-4"
+      className="w-full min-h-screen bg-black text-white flex items-start px-4 container-bg"
     >
 
-      <div className="w-full mx-auto py-40 h-full container-bg rounded-2xl flex flex-col items-center gap-14">
+      <div className="w-full mx-auto py-40 h-full rounded-2xl flex flex-col items-center gap-14">
 
         {/* Title */}
         <div className="text-center">
-          <h2 className="text-6xl text-gray-600 font-bold text-center">Skills</h2>
+          <h2 className="heading">Skills</h2>
           
         </div>
 
