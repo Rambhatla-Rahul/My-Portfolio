@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+
+.bg-primary {
+  @apply bg-[#08060A]; /* near-black purple */
+}
+
+.bg-secondary {
+  @apply bg-[#16151C]; /* deep purple layer */
+}
+
+.bg-glass {
+  @apply bg-[#58565B]/10 backdrop-blur-md;
+}
+.text-primary {
+  @apply text-white;
+}
+
+.text-secondary {
+  @apply text-[#B3B0B8]; /* softened purple-gray for readability */
+}
+
+.text-muted {
+  @apply text-[#58565B];
+}
+
+.text-accent {
+  @apply text-[#58565B];
+}
+
+.border-accent {
+  @apply border-[#58565B]/40;
+}
+.btn-primary {
+  @apply bg-white text-black rounded-full px-6 py-3 
+         transition-transform duration-200;
+}
+
+.btn-primary:hover {
+  transform: scale(1.03);
+}
+
+.btn-secondary {
+  @apply bg-[#58565B]/20 text-white border border-[#58565B]/30 
+         rounded-full px-6 py-3 backdrop-blur-md 
+         transition-all duration-200;
+}
+
+.btn-secondary:hover {
+  @apply bg-[#58565B]/30;
+}
+
+.btn-ghost {
+  @apply text-white/80 hover:text-white transition-colors;
+}

@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from "react"
-import SkillsCard from "@/components/SkillsCard"
+import SkillsCard from "@/components/home/SkillsCard"
 import { framework_list, languages_list, tools_list } from "@/constants/Skills"
 import { motion } from "framer-motion"
 

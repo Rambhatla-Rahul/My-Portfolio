@@ -1,6 +1,6 @@
 'use client'
 
-import MessageModal from "@/components/MessageModal"
+import MessageModal from "@/components/home/MessageModal"
 import { Mail, Phone, MessageSquare } from "lucide-react"
 import { useState } from "react"
 import { motion } from "framer-motion"

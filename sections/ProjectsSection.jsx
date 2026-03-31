@@ -1,6 +1,6 @@
 "use client";
 
-import ProjectCard from "@/components/ProjectsCard";
+import ProjectCard from "@/components/home/ProjectsCard";
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
